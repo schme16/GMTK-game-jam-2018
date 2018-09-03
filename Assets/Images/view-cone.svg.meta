@@ -1,0 +1,45 @@
+fileFormatVersion: 2
+guid: 45d5af8bede4d774b9053757441019f8
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: gameObject/view-cone
+    400000: gameObject/view-cone/Transform
+    2800000: texAtlas
+    21200000: gameObject/view-cone/SpriteRenderer
+    21300000: sprite
+    100100000: gameObject
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
+  SvgPixelsPerUnit: 1
+  GradientResolution: 128
+  Alignment: 1
+  CustomPivot: {x: 0, y: 0}
+  AdvancedMode: 0
+  PredefinedResolutionIndex: 2
+  TargetResolution: 720
+  ResolutionMultiplier: 1
+  StepDistance: 10
+  SamplingStepDistance: 100
+  MaxCordDeviationEnabled: 0
+  MaxCordDeviation: 1
+  MaxTangentAngleEnabled: 0
+  MaxTangentAngle: 5
+  spriteData:
+    TessellationDetail: 0
+    SpriteRect:
+      name: view-coneSprite
+      originalName: 
+      pivot: {x: 0, y: 1.0026598}
+      alignment: 0
+      border: {x: 0, y: 0, z: 0, w: 0}
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 247
+        height: 97
+      spriteID: ace493e34f00ade4992a60d21ba13705
+    PhysicsOutlines: []

@@ -5,7 +5,6 @@
 -out:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Temp/Assembly-CSharp.dll"
 -nostdlib
 -unsafe
--r:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Library/ScriptAssemblies/com.unity.vectorgraphics.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -16,8 +15,6 @@
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.BaselibModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll"
--r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
--r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.DirectorModule.dll"
@@ -62,6 +59,7 @@
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.WebModule.dll"
+-r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\PlaybackEngines\WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll"
 -r:"D:\Program Files\Unity\Unity 2018.1.5f1\Editor\Data\Managed/UnityEditor.dll"
@@ -94,6 +92,7 @@
 -r:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
 -r:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll"
 -r:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll"
+-r:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Library/ScriptAssemblies/com.unity.vectorgraphics.dll"
 -r:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Library/FacebookSDK/Facebook.Unity.Settings.dll"
 -r:"D:/Program Files/Unity/Unity 2018.1.5f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 -r:"D:/Program Files/Unity/Unity 2018.1.5f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
@@ -233,13 +232,9 @@
 -d:UNITY_2018_1_5
 -d:UNITY_2018_1
 -d:UNITY_2018
--d:PLATFORM_ARCH_64
--d:UNITY_64
 -d:ENABLE_AUDIO
 -d:ENABLE_CACHING
 -d:ENABLE_CLOTH
--d:ENABLE_DUCK_TYPING
--d:ENABLE_MICROPHONE
 -d:ENABLE_MULTIPLE_DISPLAYS
 -d:ENABLE_PHYSICS
 -d:ENABLE_SPRITERENDERER_FLIPPING
@@ -247,16 +242,13 @@
 -d:ENABLE_GRID
 -d:ENABLE_TILEMAP
 -d:ENABLE_TERRAIN
--d:ENABLE_RAKNET
 -d:ENABLE_DIRECTOR
 -d:ENABLE_UNET
--d:ENABLE_LZMA
 -d:ENABLE_UNITYEVENTS
 -d:ENABLE_WEBCAM
 -d:ENABLE_WWW
 -d:ENABLE_CLOUD_SERVICES_COLLAB
 -d:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
--d:ENABLE_CLOUD_SERVICES_ADS
 -d:ENABLE_CLOUD_HUB
 -d:ENABLE_CLOUD_PROJECT_ID
 -d:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
@@ -276,7 +268,6 @@
 -d:INCLUDE_DYNAMIC_GI
 -d:INCLUDE_GI
 -d:ENABLE_MONO_BDWGC
--d:PLATFORM_SUPPORTS_MONO
 -d:RENDER_SOFTWARE_CURSOR
 -d:INCLUDE_PUBNUB
 -d:ENABLE_PLAYMODE_TESTS_RUNNER
@@ -284,27 +275,21 @@
 -d:ENABLE_PACKMAN
 -d:ENABLE_CUSTOM_RENDER_TEXTURE
 -d:ENABLE_LOCALIZATION
--d:PLATFORM_STANDALONE_WIN
--d:PLATFORM_STANDALONE
--d:UNITY_STANDALONE_WIN
--d:UNITY_STANDALONE
--d:ENABLE_SUBSTANCE
--d:ENABLE_RUNTIME_GI
--d:ENABLE_MOVIES
--d:ENABLE_NETWORK
+-d:PLATFORM_WEBGL
+-d:UNITY_WEBGL
+-d:UNITY_WEBGL_API
+-d:UNITY_DISABLE_WEB_VERIFICATION
+-d:UNITY_GFX_USE_PLATFORM_VSYNC
 -d:ENABLE_CRUNCH_TEXTURE_COMPRESSION
 -d:ENABLE_UNITYWEBREQUEST
 -d:ENABLE_CLOUD_SERVICES
+-d:ENABLE_CLOUD_SERVICES_ADS
 -d:ENABLE_CLOUD_SERVICES_ANALYTICS
 -d:ENABLE_CLOUD_SERVICES_PURCHASING
 -d:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
--d:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
--d:ENABLE_EVENT_QUEUE
--d:ENABLE_CLUSTERINPUT
 -d:ENABLE_VR
--d:ENABLE_AR
--d:ENABLE_WEBSOCKET_HOST
--d:ENABLE_MONO
+-d:ENABLE_SPATIALTRACKING
+-d:ENABLE_IL2CPP
 -d:NET_4_6
 -d:ENABLE_PROFILER
 -d:DEBUG
@@ -317,6 +302,98 @@
 -d:UNITY_TEAM_LICENSE
 -d:UNITY_PRO_LICENSE
 -d:UNITY_POST_PROCESSING_STACK_V2
--i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/Scripts/SimpleCameraController.cs"
--i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/TutorialInfo/Scripts/Readme.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/FsmStateActionProCamera2DBase.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DAddCameraTarget.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DAdjustCameraTargetInfluence.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DApplyInfluence.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DApplyInfluencesTimed.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DCinematicsToggle.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DMoveCameraInstantlyToPosition.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DRemoveCameraTarget.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DRoomsEnter.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DShakeConstantStop.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DShakeConstantWithPreset.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DShakeStop.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DShakeWithPreset.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/3rd Party Plugins Support/PlayMakerActions/PC2DShakeWithValues.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/BasePC2D.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/BaseTrigger.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/BoundariesAnimator.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/CameraTarget.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/ConstantShakePreset.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/EnumMovementAxis.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/EnumUpdateType.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/IPositionDeltaChanger.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/IPositionOverrider.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/IPostMover.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/IPreMover.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/ISizeDeltaChanger.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/ISizeOverrider.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/KDTree.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/MoveInColliderBoundaries.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/ShakePreset.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/Utils/EditorPrefsX.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/Utils/MinMaxSliderAttribute.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/Utils/PrefsData.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Core/Utils/Utils.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DCameraWindow.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DCinematics.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DContentFitter.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DForwardFocus.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DGeometryBoundaries.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DLimitDistance.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DLimitSpeed.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DNumericBoundaries.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DPanAndZoom.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DParallax.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DPixelPerfect.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DPointerInfluence.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DRails.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DRepeater.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DRooms.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DShake.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DSpeedBasedZoom.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DTransitionsFX.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Extensions/ProCamera2DZoomToFitTargets.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Helpers/Letterbox/ProCamera2DLetterbox.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Helpers/Parallax/ProCamera2DParallaxObject.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Helpers/Pixel Perfect/ProCamera2DPixelPerfectSprite.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Helpers/TransitionFX/BasicBlit.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Triggers/ProCamera2DTriggerBoundaries.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Triggers/ProCamera2DTriggerInfluence.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Triggers/ProCamera2DTriggerRails.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Code/Triggers/ProCamera2DTriggerZoom.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/Platformer/Scripts/DollyZoomExample.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/Platformer/Scripts/Player/PlayerInput.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/Platformer/Scripts/Player/PlayerInputBot.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/Platformer/Scripts/RoomsEventsExample.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/Platformer/Scripts/ShakeExample.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/Platformer/Scripts/ToggleCinematics.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/Platformer/Scripts/ToggleTransitionsFX.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Bullet.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Door.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/DoorKey.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Enemy/EnemyAttack.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Enemy/EnemyFSM.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Enemy/EnemyPatrol.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Enemy/EnemySight.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Enemy/EnemyWander.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Enemy/PatrolWaypoint.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/GameOver.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Goal.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/ObjectMove.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/ObjectRotate.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Player/PlayerFire.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Player/PlayerHealth.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Player/PlayerInput.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Pool/Pool.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/Pool/PoolMember.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/RotateTowardsMouse.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Examples/TopDownShooter/Scripts/SwitchCameraProjection.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/ProCamera2D.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Timeline/PC2DAddOrRemoveCameraTarget/PC2DAddOrRemoveCameraTargetBehaviour.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Timeline/PC2DAddOrRemoveCameraTarget/PC2DAddOrRemoveCameraTargetClip.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Timeline/PC2DAddOrRemoveCameraTarget/PC2DAddOrRemoveCameraTargetMixerBehaviour.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/ProCamera2D/Timeline/PC2DAddOrRemoveCameraTarget/PC2DAddOrRemoveCameraTargetTrack.cs"
+-i:"D:/Dropbox-new/Dropbox/www/comps/GMTK Game Jam 2018/Assets/Scripts/PlayerScript.cs"
 -v:0
